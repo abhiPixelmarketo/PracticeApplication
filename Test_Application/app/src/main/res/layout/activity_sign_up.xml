@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="29dp"
+    android:paddingRight="29dp"
+    android:paddingTop="29dp"
+    android:paddingBottom="29dp"
+    android:background="@color/black"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing Up"
+        android:textSize="30dp"
+        android:textColor="@color/lightColour"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:maxLines="1"
+        android:hint="Username"
+        android:textSize="25dp"
+        android:id="@+id/userNamesing"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:layout_below="@+id/userNamesing"
+        android:id="@+id/passSing"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Re-enter the password"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="25dp"
+        android:id="@+id/pass2Sing"
+        android:layout_below="@+id/passSing"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_below="@+id/pass2Sing"
+        android:layout_marginTop="40dp"
+        android:background="@color/lightColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:id="@+id/submit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/singIn"
+        android:text="Sing In"
+        android:background="@color/brightColour"/>
+</RelativeLayout>
